@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.game-develop {
+	position: absolute;
+	width: 1400px;
+	height: 724px;
+	background: url(../images/banner/banner_develop_bg.png) no-repeat;
+}
+
+.global_server {
+	height: 100%;
+	width: 100%;
+	padding: 35px 0 0 50px;
+	position: absolute;
+	top: 100px;
+	left: 283px;
+
+}
+
+.chinese_server_title {
+	height: 33px;
+	width: 868px;
+	padding-left: 20px;
+	display: flex;
+	color: #000;
+    line-height: 32px;
+    border-bottom: 1px dotted #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.server_title_1,
+.server_title_2,
+.server_title_3 {
+	width: 246px;
+}
+
+.server_title_4 {
+	width: 130px;
+}
+
+.chinese_server_list {
+	height: 485px;
+	display: flex;
+	font-size: 0;
+}
+
+.server_list_1,
+.server_list_4,
+.server_list_5 {
+	padding-left: 24px;
+	padding-top: 10px;
+}
+
+.server_list_2,
+.server_list_3 {
+	padding-left: 4px;
+	padding-top: 10px;
+	overflow-y: visible;
+}
+
+.server_list_1,
+.server_list_2,
+.server_list_3 {
+	border-left: 1px solid #c3c3c3;
+	width: 242px;
+	font-size: 0;
+	overflow: hidden;
+}
+
+.server_list_4 {
+	width: 126px;
+	height: 261px;
+	box-sizing: border-box;
+	border-left: 1px solid #c3c3c3;
+	font-size: 0;
+	overflow: hidden;
+}
+
+.server_list_5_title {
+	width: 126px;
+	height: 32px;
+	line-height: 32px;
+	list-style: none;
+	font-size: 14px;
+    font-weight: 700;
+	color: #000;
+}
+
+.server_list_5 {
+	width: 126px;
+	height: 210px;
+	box-sizing: border-box;
+    border-left: 1px solid #c3c3c3;
+    overflow: hidden;
+}
+
+.server_item {
+	display: inline-block;
+	position: relative;
+	width: 85px;
+	height: 90px;
+	margin-right: 15px;
+}
+
+.server_item_avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    background: url(../images/comman/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -641px -1147px;
+}
+
+.server_item_state {
+	position: absolute;
+	top: 7px;
+    left: -5px;
+	width: 26px;
+	height: 50px;
+	background: url(../images/comman/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -1440px -696px;
+}
+
+.server_item_name {
+	display: block;
+	position: absolute;
+	top: 70px;
+	width: 85px;
+	height: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+
+.develop_aside{
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 162px;
+	height: 588px;
+}
+.server_title {
+	position: absolute;
+	left: 0;	
+	width: 127px;
+    height: 362px;
+    margin-right: 46px;
+    background: url(../images/comman/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.develop_announce {
+	position: absolute;
+	width: 95px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	background: #c9b27c;
+	border-radius: 5px;
+	right: 43px;
+	bottom: 188px;
+}
+
+.develop_download {
+	position: absolute;
+    width: 256px;
+    height: 177px;
+    bottom: 0;
+    right: -80px;
+	background: url(../images/comman/sprite.png);
+	background-repeat: no-repeat;
+    background-position: -696px -189px;
+}

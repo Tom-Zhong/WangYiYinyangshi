@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>魔鬼SSR阴阳师</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="static/css/runningfrog.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="shortcut icon" href="./static/images/favicon.ico">
+    <script src="src/jquery.min.js"></script>
+    <script src="src/bootstrap_new.js"></script>
+</head>
+
+<body onload="setup()">
+    <!-- Header Start zgy -->
+    <div id="mg-header">
+        <div class="header-container">
+            <div class="header-nav">
+                <a href="#" class="header-a"><img src="static/images/comman/wangyi_game.png" alt="网站logo"></a>
+                <div class="header-shade-window"></div>
+                <div class="header-big-nav">
+                    <div class="nav-left-part">
+                        <div class="left-part-shade"></div>
+                        <p>扫描下载</p>
+                        <img src="static/images/comman/code.png" alt="扫码下载">
+                    </div>
+                    <a href="#" class="header-game-logo">
+                        <span></span>
+                        <div class="header-game-info">
+                            <h3>阴阳师</h3>
+                            <p>网易和风匠心巨制</p>
+                        </div>
+                    </a>
+                    <ul class="header-right-nav">
+                        <li><a href="#">官网首页</a><span class="line"></span></li>
+                        <li><a href="#">新闻咨询</a><span class="line"></span></li>
+                        <li><a href="#">游戏攻略</a><span class="line"></span></li>
+                        <li>
+                            <a href="#">游戏特色</a><span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="#">同人专区</a><span class="line"></span>
+                            <em></em>
+                            <div class="header-out-window-t">
+                                <div class="out-window-content">
+                                    <span class="out-window-tongren"></span>
+                                    <span>同人绘画</span>
+                                </div>
+                                <div class="out-window-content header-border">
+                                    <span class="out-window-wanjia"></span>
+                                    <span>玩家 cos</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="header-adjust">官方渠道</a>
+                            <em></em>
+                            <div class="header-out-window-g">
+                                <div class="out-window-content">
+                                    <span class="out-window-tongren"></span>
+                                    <span>同人绘画</span>
+                                </div>
+                                <div class="out-window-content header-border">
+                                    <span class="out-window-wanjia"></span>
+                                    <span>玩家 cos</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="header-main-nav">
+                <li class="header-regist-game"><a href="#">注册账号</a></li>
+                <li class="headr-android-charge"><a href="#">安卓充值</a></li>
+                <li class="header-game-content">
+                    <a href="#" class="game-all-content">
+                    网易游戏全目录</a>
+                    <i></i>
+                    <div class="header-drop-shade"></div>
+                    <div class="header-drop-menu">
+                        <div class="header-client-game">
+                            <div class="header-game-top">
+                                <b class="heade-game-title">客户端游戏</b>
+                                <p>角色扮演</p>
+                                <ul>
+                                    <li><a href="#">梦幻西游</a></li>
+                                    <li><a href="#">天下三</a></li>
+                                    <li><a href="#">大话2经典版</a></li>
+                                    <li><a href="#">天谕</a></li>
+                                    <li><a href="#">大话2免费版</a></li>
+                                    <li><a href="#">西楚霸王</a></li>
+                                    <li><a href="#">新大话3经典版</a></li>
+                                    <li><a href="#">镇魔曲</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                </ul>
+                                <p>竞技休闲</p>
+                                <ul>
+                                    <li><a href="#">梦幻西游</a></li>
+                                    <li><a href="#">天下三</a></li>
+                                    <li><a href="#">大话2经典版</a></li>
+                                    <li><a href="#">天谕</a></li>
+                                    <li><a href="#">大话2免费版</a></li>
+                                    <li><a href="#">西楚霸王</a></li>
+                                    <li><a href="#">新大话3经典版</a></li>
+                                    <li><a href="#">镇魔曲</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-game-bottom"></div>
+                        </div>
+                        <div class="header-phone-game">
+                            <b class="heade-game-title">客户端游戏</b>
+                            <div class="header-game-left">
+                                <p>角色扮演</p>
+                                <ul>
+                                    <li><a href="#">梦幻西游</a></li>
+                                    <li><a href="#">天下三</a></li>
+                                    <li><a href="#">大话2经典版</a></li>
+                                    <li><a href="#">天谕</a></li>
+                                    <li><a href="#">大话2免费版</a></li>
+                                    <li><a href="#">西楚霸王</a></li>
+                                    <li><a href="#">新大话3经典版</a></li>
+                                    <li><a href="#">镇魔曲</a></li>
+                            </div>
+                            <div class="header-game-right">
+                                <p>角色扮演</p>
+                                <ul>
+                                    <li><a href="#">梦幻西游</a></li>
+                                    <li><a href="#">天下三</a></li>
+                                    <li><a href="#">大话2经典版</a></li>
+                                    <li><a href="#">天谕</a></li>
+                                    <li><a href="#">大话2免费版</a></li>
+                                    <li><a href="#">西楚霸王</a></li>
+                                    <li><a href="#">新大话3经典版</a></li>
+                                    <li><a href="#">镇魔曲</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                    <li><a href="#">暗黑破环王</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-assist-game">
+                            <b class="heade-game-title">客户端游戏</b>
+                            <p>角色扮演</p>
+                            <ul>
+                                <li><a href="#">梦幻西游</a></li>
+                                <li><a href="#">天下三</a></li>
+                                <li><a href="#">大话2经典版</a></li>
+                                <li><a href="#">天谕</a></li>
+                                <li><a href="#">大话2免费版</a></li>
+                                <li><a href="#">西楚霸王</a></li>
+                                <li><a href="#">新大话3经典版</a></li>
+                                <li><a href="#">镇魔曲</a></li>
+                                <li><a href="#">暗黑破环王</a></li>
+                                <li><a href="#">暗黑破环王</a></li>
+                                <li><a href="#">暗黑破环王</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="header-game-insurance">
+                    <div class="header-show-info">
+                        <a href="#" class="game-insurance1">安卓充值9.8折</a>
+                        <a href="#" class="game-insurance1">更多游戏</a>
+                        <a href="#" class="game-insurance1">领取网易严选宝箱</a>
+                    </div>
+                </li>
+                </ul>
+        </div>
+    </div>
+    <!-- Main container -->
+    <div id="mg-main">
+        <!-- Banner Start ffm -->
+        <div id="mg-banner">
+            <div class="wrapper">
+                <div class="nav fr">
+                    <ul>
+                        <li><a href="#">官网首页</a><span class="line"></span></li>
+                        <li><a href="#">新闻资讯</a><span class="line"></span></li>
+                        <li><a href="#">游戏攻略</a><span class="line"></span></li>
+                        <li><a href="#">游戏特色</a><span class="line"></span></li>
+                        <li><a href="#">同人专区</a><span class="line"></span></li>
+                        <li><a href="#">官方渠道</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="yyshi-logo" id="banner-yyshi-logo"><img src="./static/images/comman/yyshi_logo.png" alt=""></div>
+                    <div class="introduct" id="banner-introduct"><img src="./static/images/banner/banner_introduct.png" alt=""></div>
+                    <div class="bg-girl" id="banner-bg-girl"><img src="./static/images/banner/banner_bg_girl.png" alt=""></div>
+                    <div class="bg-man" id="banner-bg-man"><img src="./static/images/banner/banner_bg_man.png" alt=""></div>
+                    <div class="runningfrog">
+                        <input type="checkbox" id="frogcheckbox" name="frogcheckbox">
+                        <label for="frogcheckbox"><img src="./static/images/banner/banner_jump.gif" alt=""></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download Start ffm -->
+        <div id="mg-download">
+            <input type="checkbox" name="download-radio" id="checkbox">
+            <label class="hidebtn download-btn" for="checkbox"></label>
+            <label class="showbtn download-btn" for="checkbox"></label>
+            <div class="wrapper">
+                <div class="left-part"></div>
+                <div class="logan"></div>
+                <div class="code">
+                    <img src="./static/images/comman/code.png" alt="">
+                    <div class="line">
+                        <img src="./static/images/banner/banner_line.png" alt="">
+                    </div>
+                </div>
+                <div class="downloadlink">
+                    <a href="#" class="downloadIOS"></a>
+                    <a href="#" class="downloadAndroid"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Date Start ffm -->
+        <div id="mg-date">
+            <div class="date-wrapper">
+                <div class="calendar-header"></div>
+                <div class="calendar-link">
+                    <a href="#" class="douji">
+                        <span>斗技,每日12:00-13:00,21:00-22:00<br>协同斗技,每周六日14:00-15:30</span>
+                    </a>
+                    <a href="#" class="nianshou">
+                        <span>通关探索副本概率开启,随机<br>获得金币,达摩碎片,达摩</span>
+                    </a>
+                    <a href="#" class="shiju">
+                        <span>妖气封印发现，CD1小时</span>
+                    </a>
+                    <a href="#" class="shoulie">
+                        <span>周一至周四鬼王，周五-周日阴界之门，时间19-21点</span>
+                    </a>
+                    <a href="#" class="xuanshang">
+                        <span>每日5点和18点重置</span>
+                    </a>
+                    <a href="#" class="jiejie">
+                        <span>个人每周一6点重置，阴阳寮每日5点重置，周六日奖励翻倍</span>
+                    </a>
+                    <a href="#" class="fuben">
+                        <span class="curData">【周三】 魍魉之匣、被服、阴摩罗、魅妖</span>
+                        <div class="iconData">
+                            <span class="iconData-curData">【周三】 魍魉之匣、被服、阴摩罗、魅妖</span>
+                            <span>【周一】雪幽魂、地藏像、鸣屋、网切</span>
+                            <span>【周二】涅槃之火、三味、招财猫、狰</span>
+                            <span>【周三】 魍魉之匣、被服、阴摩罗、魅妖</span>
+                            <span>【周四】反枕、心眼、树妖、针女</span>
+                            <span>【周五】日女巳时、镜姬、钟灵、破势</span>
+                            <span>【周六】随机掉落全部御魂</span>
+                            <span>【周日】随机掉落全部御魂</span>
+                        </div>
+                    </a>
+                    <a href="#" class="yeyuanhuo">
+                        <span class="curData">【周三】 魍魉之匣、被服、阴摩罗、魅妖</span>
+                    </a>
+                    <div class="calendar-link-mini">
+                        <a href="#" class="icon1"></a>
+                        <a href="#" class="icon2"></a>
+                        <a href="#" class="icon3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News Start ly -->
+        <div id="mg-news">
+            <div class="news-pic">
+                <div class="view-pager">
+                    <div class="container">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="static/images/news/news_lunbo1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="static/images/news/news_lunbo2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="static/images/news/news_lunbo3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-content">
+                <input checked id="news-one" name="mgrole-tabs" type="radio">
+                <label for="news-one" onmousemove="checkedBtn(0)">
+                    <span class="news1-span"></span>
+                    <em class="news-checked"></em>
+                </label>
+                <span class="line line1"></span>
+                <input id="news-two" name="mgrole-tabs" type="radio">
+                <label for="news-two" onmousemove="checkedBtn(1)">
+                    <span class="news2-span"></span>
+                    <em class="news-checked"></em>
+                </label>
+                <span class="line line2"></span>
+                <input id="news-three" name="mgrole-tabs" type="radio" value="Two">
+                <label for="news-three" onmousemove="checkedBtn(2)">
+                    <span class="news3-span"></span>
+                    <em class="news-checked"></em>
+                </label>
+                <span class="line line3"></span>
+                <input id="news-four" name="mgrole-tabs" type="radio">
+                <label for="news-four" onmousemove="checkedBtn(3)">
+                    <span class="news4-span"></span>
+                    <em class="news-checked"></em>
+                </label>
+                <span class="line line4"></span>
+                <input id="news-five" name="mgrole-tabs" type="radio">
+                <label for="news-five" onmousemove="checkedBtn(4)">
+                    <span class="news5-span"></span>
+                    <em class="news-checked"></em>
+                </label>
+                <div class="wide-line"></div>
+                <div class="news-swipers">
+                    <div class="news-swiper">
+                        <ul>
+                            <li>
+                                <a href="" class="link f14">-【新闻】 《阴阳师》大触觉醒插画大赛第二季开启</a>
+                                <span class="news-date f12">2017-03-06</span>
+                            </li>
+                            <li><a href="" class="link f14">-【活动】 新服集结，阴阳寮入境预检开启！提前领个崽儿回家~</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【新闻】 声控召唤·阴阳师角色配音大赛获奖名单</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【活动】 大触觉醒第二季！同人插画大赛开启！</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                            <li><a href="" class="link f14">-【公告】 3月3日体验服维护更新公告</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                        </ul>
+                    </div>
+                    <div class="news-swiper">
+                        <ul>
+                            <li>
+                                <a href="" class="link f14">-【新闻】 《阴阳师》大触觉醒插画大赛第二季开启</a>
+                                <span class="news-date f12">2017-03-06</span>
+                            </li>
+                            <li><a href="" class="link f14">-【新闻】 声控召唤·阴阳师角色配音大赛获奖名单</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【新闻】 新皮肤新副本 《阴阳师》女儿节版本即将上线</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【新闻】 非酋逆袭 《阴阳师》式神年度总决选应援寮奖励派送</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                            <li><a href="" class="link f14">-【新闻】 皮肤上新！童男童女初长成</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                        </ul>
+                    </div>
+                    <div class="news-swiper">
+                        <ul>
+                            <li>
+                                <a href="" class="link f14">-【公告】 3月3日体验服维护更新公告</a>
+                                <span class="news-date f12">2017-03-06</span>
+                            </li>
+                            <li><a href="" class="link f14">-【公告】 3月3日正式服维护更新公告</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【公告】 2月24日维护更新公告</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【公告】 抢先体验服2月24日维护公告</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                            <li><a href="" class="link f14">-【公告】 2月17日维护更新公告</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                        </ul>
+                    </div>
+                    <div class="news-swiper">
+                        <ul>
+                            <li>
+                                <a href="" class="link f14">-【活动】 新服集结，阴阳寮入境预检开启！提前领个崽儿回家~</a>
+                                <span class="news-date f12">2017-03-06</span>
+                            </li>
+                            <li><a href="" class="link f14">-【活动】 大触觉醒第二季！同人插画大赛开启！</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【活动】 百绘罗衣，式神皮肤设计大赛来袭！</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【活动】 非酋逆袭，为崽而战！人气式神年度总决选火热开启</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                            <li><a href="" class="link f14">-【活动】 百鬼映画！《阴阳师》首届MMD大赛华丽开启！</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                        </ul>
+                    </div>
+                    <div class="news-swiper">
+                        <ul>
+                            <li>
+                                <a href="" class="link f14">-【媒体】&nbsp;&nbsp;&nbsp;AppSo2016 《阴阳师》登年度榜单</a>
+                                <span class="news-date f12">2017-03-06</span>
+                            </li>
+                            <li><a href="" class="link f14">-【媒体】 【17173】我的领导是个极品 他为抽SSR去了晴明神社</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【媒体】 【17173】没想到你是这样的姑获鸟 一个SR为何有SSR的实力？</a>
+                                <span class="news-date f12">2017-03-03</span></li>
+                            <li><a href="" class="link f14">-【媒体】 【18183】阴阳师协同斗技登顶阵容:无拉条无控制</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                            <li><a href="" class="link f14">-【媒体】 【爱玩】像我这么能打的只有两个！阴阳师那些沉迷输出的治疗</a>
+                                <span class="news-date f12">2017-03-02</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Role Start ly -->
+        <div id="mg-role">
+            <div class="wrapper">
+                <div class="role-bar">
+                    <ul>
+                        <li class="logo"></li>
+                        <li class="point point1"></li>
+                        <li class="point point2"></li>
+                    </ul>
+                </div>
+                <div class="role-tabs">
+                    <input checked id="role-one" name="role-tabs" type="radio">
+                    <label for="role-one" class="role-one">
+                        <a href="">
+                            <li class="god"></li>
+                            <em></em>
+                        </a>
+                    </label>
+                    <input id="role-two" name="role-tabs" type="radio" value="Two">
+                    <label for="role-two" class="role-two">
+                        <a href="">
+                            <li class="mian-role"></li>
+                            <em></em>
+                        </a>
+                    </label>
+                    <div class="role-panels">
+                        <div class="role-panel">
+                            <section class="shishen" style="margin-top: 63px;">
+                                <input id="tab-rdo1" type="radio" name="shishen-rdo" checked>
+                                <input id="tab-rdo2" type="radio" name="shishen-rdo">
+                                <input id="tab-rdo3" type="radio" name="shishen-rdo">
+                                <input id="tab-rdo4" type="radio" name="shishen-rdo">
+                                <input id="tab-rdo5" type="radio" name="shishen-rdo">
+                                <div class="topbar">
+                                    <div class="shishen-tabs">
+                                        <label for="tab-rdo1" href="javascript:void(0);">全部</label>
+                                        <label for="tab-rdo2" href="javascript:void(0);">SSR</label>
+                                        <label for="tab-rdo3" href="javascript:void(0);">SR</label>
+                                        <label for="tab-rdo4" href="javascript:void(0);">R</label>
+                                        <label for="tab-rdo5" href="javascript:void(0);">N</label>
+                                    </div>
+                                    <a href="#" class="view">
+                                    </a>
+                                </div>
+                                <div class="list-wrapper">
+                                    <div id="shishen-list1" class="shishen-list">
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>青坊主</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>古笼火</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>夜叉</em></span></span></span><img
+                                                            src="./static/images/role/role2.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>黑童子</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>白童子</em></span></span></span><img
+                                                            src="./static/images/role/role3.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role4.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>烟烟罗</em></span></span></span><img
+                                                            src="./static/images/role/role5.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>桃花妖</em></span></span></span><img
+                                                            src="./static/images/role/role6.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>雪女</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>三尾狐</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>灯笼鬼</em></span></span></span><img
+                                                            src="./static/images/role/role1.png"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="shishen-list2" class="shishen-list">
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role11.png"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="shishen-list3" class="shishen-list">
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role12.png"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="shishen-list4" class="shishen-list">
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role13.png"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="shishen-list5" class="shishen-list">
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>花鸟卷</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                            <li><a href="#" class="item sp"><span class="tb"><span class="tr"><span class="td"><em>辉夜姬</em></span></span></span><img
+                                                            src="./static/images/role/role14.png"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="role-panel">
+                            <input checked id="god-one" name="god-tabs" type="radio">
+                            <input id="god-two" name="god-tabs" type="radio" value="Two">
+                            <input id="god-three" name="god-tabs" type="radio" value="Two">
+                            <input id="god-four" name="god-tabs" type="radio" value="Two">
+                            <div class="god-tabs">
+                                <label class="god-one" for="god-one">
+                                    晴明
+                                    <span class="god-tri"></span>
+                                </label>
+                                <label class="god-two" for="god-two">
+                                    神乐
+                                    <span class="god-tri"></span>
+                                </label>
+                                <label class="god-three" for="god-three">
+                                    源博雅
+                                    <span class="god-tri"></span>
+                                </label>
+                                <label class="god-four" for="god-four">
+                                    八百比丘尼
+                                    <span class="god-tri"></span>
+                                </label>
+                                <div class="god-panels">
+                                    <div class="god-panel">
+                                        <img class="god-qm" src="https://yys.res.netease.com/pc/gw/20160929201016/img/zhujue_qingming_aee7c92.png" alt="">
+                                        <div class="god-intro">
+                                            <span class="god-num-1"></span>
+                                            <h3>晴明</h3>
+                                            <p>京都城中极具盛名的天才阴阳师
+                                                <br>却不知为何失去了自己的记忆
+                                                <br>等待着他的是寻回记忆的喜悦
+                                                <br>还是不堪回首的残忍真相</p>
+                                            <a href=""><span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="god-panel">
+                                        <img class="god-ys" src="https://yys.res.netease.com/pc/gw/20160929201016/img/zhujue_shenle_585e7f3.png" alt="">
+                                        <div class="god-intro">
+                                            <span class="god-num-2"></span>
+                                            <h3>神乐</h3>
+                                            <p>善良而沉默的神秘少女
+                                                <br>失忆后便跟随在晴明身边
+                                                <br>拥有敏锐的直觉和强大的通灵能力
+                                                <br>以及不为人知的过去</p>
+                                            <a href=""><span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="god-panel">
+                                        <img class="god-yby" src="https://yys.res.netease.com/pc/gw/20160929201016/img/zhujue_yby_820fcd9.png" alt="">
+                                        <div class="god-intro">
+                                            <span class="god-num-3"></span>
+                                            <h3>源博雅</h3>
+                                            <p>拥有皇室血统的贵族青年
+                                                <br>擅长弓术与结界之术
+                                                <br>性情孤傲爽直
+                                                <br>但似乎一直在寻找某个重要的人</p>
+                                            <a href=""><span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="god-panel">
+                                        <img class="god-bb" src="https://yys.res.netease.com/pc/gw/20160929201016/img/zhujue_bqn_a6c9b81.png" alt="">
+                                        <div class="god-intro">
+                                            <span class="god-num-4"></span>
+                                            <h3>八百比丘尼</h3>
+                                            <p>因误食人鱼肉而不老不死
+                                                <br>能力超凡的流浪占卜师
+                                                <br>一直在凤凰林中等待着
+                                                <br>占卜之梦预言的命运之人</p>
+                                            <a href=""><span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Intro Start ls -->
+        <div id="mg-intro">
+            <div class="search-div">
+                <div class="seach-wrapper">
+                    <input type="text" placeholder="请输入寮间问题">
+                </div>
+                <div class="search-btn"></div>
+            </div>
+            <div class="left-banner">
+                <!--轮播图-->
+                <div class="view-pager">
+                    <div class="container">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="static/images/intro/intro_lunbo1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="static/images/intro/intro_lunbo2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-nav">
+                    <a class="intro1">
+                        <span></span>
+                        <div class="line"></div>
+                    </a>
+                    <a class="intro2">
+                        <span></span>
+                        <div class="line"></div>
+                    </a>
+                    <a class="intro3">
+                        <span></span>
+                        <div class="line"></div>
+                    </a>
+                    <a class="intro4">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="tabs">
+                <input checked id="start" name="tabs" type="radio">
+                <label for="start" onmousemove="checkedBtn(0)" class="intro-start">
+                </label>
+                <span class="dot"></span>
+                <input id="one" name="tabs" type="radio">
+                <label for="one" onmousemove="checkedBtn(1)">
+                    <span class="one-span"></span>
+                    <em class="checked-bac"></em>
+                </label>
+                <span class="dot"></span>
+                <input id="two" name="tabs" type="radio" value="Two">
+                <label for="two" onmousemove="checkedBtn(2)">
+                    <span class="two-span"></span>
+                    <em class="checked-bac"></em>
+                </label>
+                <span class="dot"></span>
+                <input id="three" name="tabs" type="radio">
+                <label for="three" onmousemove="checkedBtn(3)">
+                    <span class="three-span"></span>
+                    <em class="checked-bac"></em>
+                </label>
+                <span class="dot"></span>
+                <input id="four" name="tabs" type="radio">
+                <label for="four" onmousemove="checkedBtn(4)">
+                    <span class="four-span"></span>
+                    <em class="checked-bac"></em>
+                </label>
+                <div class="intro-panels">
+                    <div class="intro-panel">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【御魂】 持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-panel">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者:晓宇</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-panel">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【玩法】 【业原火】痴之阵推荐过关配置
+                                    </p>
+                                    <span>作者：松烟</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-panel">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        持弓少女——易养成单点爆伤【白狼】
+                                    </p>
+                                    <span>作者：阿尔杰塔的小跟班</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intro-panel">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>
+                                        【新手】 稳字诀，【晴明】技能解析
+                                    </p>
+                                    <span>作者：阿尔杰</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-shadow">
+                <div class="show-info">
+                    请先输入关键字
+                </div>
+            </div>
+        </div>
+        <!-- Same Start qyb -->
+        <!-- Same Start qyb -->
+        <div id="mg-same">
+            <div class="same-topbar">
+                <a class="same-title" href="#"></a>
+                <ul class="same-nav">
+                    <li class="same-select active" data-target="#myCarousel" data-slide-to="0">
+                        <a href="#">
+                            <span>精彩推荐</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="same-paint" data-target="#myCarousel" data-slide-to="1">
+                        <a href="#">
+                            <span>同人绘画</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="same-cos" data-target="#myCarousel" data-slide-to="2" onmouseover="sameTarget()">
+                        <a href="#">
+                            <span>玩家COS</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="same-video" data-target="#myCarousel" data-slide-to="3">
+                        <a href="#">
+                            <span>同人视频</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="same-fiction" data-target="#myCarousel" data-slide-to="4">
+                        <a href="#">
+                            <span>同人小说</span>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="same-superior" data-target="#myCarousel" data-slide-to="5">
+                        <a href="#">
+                            <span>高手在民间</span>
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="same-contribute">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="same-wrap">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <ol class="same-select-article same-article">
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">好好改造重新做人【作者】君颜组</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan2 .jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">精选推荐周榜TOP3</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan3.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">混搭九宫格【作者】鑰匙君_脱非入欧</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan4.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">狗崽【作者】gacha-不知是煜</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan5.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">猫咪两小无猜！【作者】向日喵小葵</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan6.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">狗崽【作者】狸优公子</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan7.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">脑洞大开【作者】gacha-KAKYUU</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_jingxuan8.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">非洲人的男神们【作者】知心的花英俊</span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="item">
+                            <ol class="same-paint-article same-article">
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">阴阳师日常【作者】-讨个吉祥-</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren2.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">高校paro【作者】二宫塔塔</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren3.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">一个女儿节脑洞【作者】用生命调戏真爱</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren4.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">爪机版版头QUQ【作者】苗疆月月影</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren5.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">卖萌小剧场！【作者】恒温__</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren6.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">平安京怪谈【作者】KuguKiugu</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren7.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">晴博梗 ​​​​【作者】子渣</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren8.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">式神一锅炖短篇集【作者】晋江呱瓜呱 &蒼田</span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="item">
+                            <ol class="same-cos-article same-article">
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">一发入魂的小姐姐！【作者】浮生叹温凉</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos2.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">与我一同堕入这无尽地狱吧...【作者】春山&</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos3.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">大天狗cos【作者】旋律Melody</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos4.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">为琴而生，为音成魔【作者】白鹭非露</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos5.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">青行灯cos【作者】临晨Jessica</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos6.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">Cosplay周榜TOP3</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos7.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">白狼-森林之姬【作者】Hana_哈啦啾</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_cos8.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">执狐之爪，与狐嗯哼。【作者】kaki蝎_小贤我</span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="item">
+                            <ol class="same-video-article same-article">
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video1.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">烟月春和 唤醒沉睡的辉夜姬小姐姐【作者】</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video2.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">身负紫藤足踏白雪 小鹿男新皮肤紫苑藤雪【</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video3.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">樱雨刀舞特典皮肤鉴赏【作者】</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video4.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">卖萌不如跳舞【作者】</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video5.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">新番外 见习鬼使的故事【作者】</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video6.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">#阴阳师新年祭# 声优齐送祝福【作者】阴阳</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video7.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">姑获鸟新皮肤 金銮鹤羽【作者】</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_video8.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name"><原创编舞 萌萌萤草【作者】2TIG#阴阳师M</span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="item">
+                            <ol class="same-fiction-article same-article">
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">《论阴阳师生存的1000种错误方法》 01【作</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel2.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">《论阴阳师生存的1000种错误方法》 01【作</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel3.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">妖狐疑似吃到了变质达摩【作者】陆杰斐＃阴</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">【德艺双馨】非酋的年会【作者】佚川＃阴</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel5.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">金鸾鹤羽【作者】灰白奖章＃阴阳师同人文大</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">非洲大草原新闻合集【作者】弦上雪＃阴阳师</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">在成为黑晴明的日子里（十）【作者】Kuffs</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_tongren_novel1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">血火平安京：尾声【作者】咖啡有害健康＃阴</span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="item">
+                            <ol class="same-superior-article same-article">
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou1.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">超可爱哇！【作者】进击的小桑丶</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou2.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">烟烟罗翻糖人偶【作者】翻糖MM-白之猫猫</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou3.png">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">姑姑新鲜出炉！【作者】等着灰太狼飞回来的</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou4.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">高手在民间周榜TOP3</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou5.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">妖刀小姐姐！【作者】许蕾粘土手作</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou6.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">这萤草没毛病！【作者】米格喵丶</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou7.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">好棒的手工作品！【作者】末日的咏叹mr</span>
+                                </li>
+                                <li class="same-section">
+                                    <a class="same-cover" href="#">
+                                        <img src="static/images/same/same_gaoshou8.jpg">
+                                        <em></em>
+                                        <span></span>
+                                    </a>
+                                    <span class="same-name">呆萌呆萌的手工作品【作者】筱芽粘土</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Source Start djy -->
+        <div id="mg-source">
+            <div class="source_wrap clearfix">
+                <div class="source_video">
+                    <h3><a href="http://yys.163.com/video/index.html" target="_blank"></a></h3>
+                    <a class="item">
+                        <img src="static/images/source/source1.jpg">
+                        <p class="video_name">《阴阳师》核心玩法</p>
+                    </a>
+                    <a class="item">
+                        <img src="static/images/source/source3.jpg">
+                        <p class="video_name">《阴阳师》声优阵容</p>
+                    </a>
+                    <a class="item">
+                        <img src="static/images/source/source4.jpg">
+                        <p class="video_name">【阴阳师X极乐净土】抽式神不如跳舞</p>
+                    </a>
+                </div>
+                <div class="source_paper">
+                    <h3><a href="http://yys.163.com/video/index.html" target="_blank"></a></h3>
+                    <a href="http://yys.163.com/video/index.html" class="item" target="_blank">
+                        <img src="static/images/source/source2.jpg">
+                        <p class="paper_name">游戏场景原画</p>
+                    </a>
+                    <a href="http://yys.163.com/video/index.html" class="item" target="_blank">
+                        <img src="static/images/source/source5.jpg">
+                        <p class="paper_name">《阴阳师》声优阵容</p>
+                    </a>
+                    <a href="http://yys.163.com/video/index.html" class="item" target="_blank">
+                        <img src="static/images/source/source6.jpg">
+                        <p class="paper_name">游戏角色原画</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Event Start djy -->
+        <div id="mg-event" class="clearfix">
+            <div class="event_logo"></div>
+            <ul class="event_content clearfix">
+                <li>
+                    <a href="#">
+                        <img src="static/images/event/event1.jpg">
+                        <span class="event_name">大触觉醒第二季！同人插画大赛</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="static/images/event/event2.jpg">
+                        <span class="event_name">天机谱：有奖攻略互动计划</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="static/images/event/event3.jpg">
+                        <span class="event_name">论坛活动，参与有奖</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="static/images/event/event4.jpg">
+                        <span class="event_name">绝美启幕，敬请期待！</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Service Start djy-->
+        <div id="mg-service" class="clearfix">
+            <a href="#" class="service_logo"></a>
+            <div class="service_wrap">
+                <div class="service_code">
+                    <img src="static/images/service/service_code1.png">
+                </div>
+                <div class="service_introduce clearfix">
+                    <p>关注官方微博</p>
+                    <p>扫描二维码</p>
+                    <span class="micro_blog"></span>
+                </div>
+                <span class="line"></span>
+                <a href="http://yys163.com" target="_blank" class="blog_name">微博名：<span>网易阴阳师手游</span></a>
+            </div>
+            <div class="service_wrap">
+                <div class="service_code">
+                    <img src="static/images/service/service_code1.jpg">
+                </div>
+                <div class="service_introduce clearfix">
+                    <p>关注官方微信号</p>
+                    <p>扫描二维码</p>
+                    <span class="wechat"></span>
+                    <a href="http://yys163.com" target="_blank" class="blog_name">公众号：<span>yinyangshi163</span></a>
+                </div>
+                <span class="line"></span>
+            </div>
+            <div class="service_cus">
+                <div class="cus_icon"></div>
+                <p class="customer">客服服务电话</p>
+                <p class="tel">0571-26201179</p>
+                <span class="cus_line"></span>
+                <a class="cus_bug" href="#">BUG反馈：<span>游戏问题</span></a>
+                <a class="return_top" id="return_top"></a>
+            </div>
+        </div>
+        <!-- Footer Start zgy -->
+        <div id="mg-footer">
+            <div class="footer-top">
+                <div class="footer-more">
+                </div>
+                <a class="footer-experience">
+                    <span class="word"></span>
+                    <div class="wrap-pic">
+                        <img src="static/images/comman/code.png" alt="扫我改变人生">
+                        <p></p>
+                    </div>
+                    <span class="arrow"></span>
+                    <span class="door"></span>
+                </a>
+            </div>
+            <div class="footer-share">
+                <div class="share-content">
+                    <span>分享到:</span>
+                    <ul>
+                        <li>
+                            <a class="wx" href="#">
+                                <svg t="1488886826670" class="icon" style="" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1537" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="21">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M351.5501 365.3473c16.6874 0 27.8862-11.3453 27.8862-28.2458 0-16.9795-11.1989-28.1739-27.8862-28.1739-16.6804 0-33.5176 11.1944-33.5176 28.1739C318.0324 354.002 334.8697 365.3473 351.5501 365.3473zM507.4328 308.9265c-16.6874 0-33.4467 11.1944-33.4467 28.1739 0 16.9015 16.7593 28.2458 33.4467 28.2458 16.8233 0 27.9512-11.3453 27.9512-28.2458C535.384 320.122 524.256 308.9265 507.4328 308.9265zM702.3866 517.7789c16.7593 0 27.9502-11.1994 27.9502-22.5407 0-11.2694-11.1909-22.6147-27.9502-22.6147-10.977 0-22.034 11.3453-22.034 22.6147C680.3536 506.5795 691.4096 517.7789 702.3866 517.7789zM579.8796 517.7789c16.9012 0 27.8782-11.1994 27.8782-22.5407 0-11.2694-10.977-22.6147-27.8782-22.6147-11.05 0-22.2478 11.3453-22.2478 22.6147C557.6318 506.5795 568.8297 517.7789 579.8796 517.7789zM76.7541 483.6761c0 242.5146 196.5688 439.0743 439.0903 439.0743 242.5215 0 439.0903-196.5597 439.0903-439.0743S758.3659 44.6048 515.8444 44.6048C273.3229 44.6048 76.7541 241.1615 76.7541 483.6761zM627.2255 370.1031c-105.8206 0-189.3934 80.0567-189.3934 178.6299 0 16.4658 2.5654 32.2731 6.8826 47.3449-6.8826 0.5856-13.7642 0.8784-20.7828 0.8784-27.8153 0-50.205-5.7061-78.0133-11.3413l-77.8704 39.5902 22.2478-67.911c-55.7655-39.5152-89.1322-90.3767-89.1322-152.3597 0-107.4242 100.3321-192.0178 222.7681-192.0178 109.5512 0 205.4951 67.6152 224.7338 158.5055C641.6473 370.6177 634.4718 370.1031 627.2255 370.1031zM830.526 546.0957c0 50.8605-33.2958 95.94-78.0133 129.8909l16.7593 56.4957-61.1041-33.881c-22.3268 5.6352-44.6386 11.2694-66.8214 11.2694-105.9625 0-189.5363-73.3992-189.5363-163.776 0-90.3008 83.5738-163.8439 189.5363-163.8439C741.3857 382.2518 830.526 455.795 830.526 546.0957z" p-id="1538" fill="#82a0b8"></path>
+                                </svg>
+                                <span href="#">微信</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="yx" href="#">
+                                <?xml version="1.0" standalone="no"?>
+                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                <svg t="1488886892010" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2865" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M521.678 28.512c-267.808 0-484.979 217.090-484.979 484.979s217.090 484.979 484.979 484.979c267.808 0 484.979-217.090 484.979-484.979s-217.090-484.979-484.979-484.979zM788.614 836.947c-133.951 59.778-304.591 12.422-378.727-13.722-58.202-18.066-109.54-51.658-149.458-95.745-0.996-0.582-2.115-0.914-3.116-1.468 0.621 0.005 1.263 0.004 1.98 0.208-53.275-59.477-85.708-137.977-85.708-224.028 0-185.723 150.517-336.196 336.18-336.196 185.682 0 336.18 150.517 336.18 336.196 0 119.473-62.356 224.283-156.277 283.881 8.39 10.521 33.034 32.927 99.031 50.907zM675.788 552.381l-0.002-0.208c4.893-16.043 7.553-33.034 7.553-50.571 0-95.745-77.574-173.347-173.323-173.347s-173.347 77.574-173.347 173.347c0 62.412 33.121 116.977 82.604 147.477l-1.566 0.327c-26.512 47.065-76.892 78.901-134.765 78.901-8.057 0-15.883-0.876-23.632-2.113 0.372 0.397 0.857 0.857 1.209 1.263 40.494 21.276 86.543 33.498 135.498 33.498 132.278 0 243.917-87.98 279.812-208.605z" p-id="2866" fill="#82a0b8"></path>
+                                </svg>
+                                <span>易信</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="wb" href="#">
+                                <svg t="1488886864264" class="icon" style="" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2190" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M407.859 574.347c-15.395 1.61-26.392 14.995-26.392 27.765 0 12.799 12.41 21.669 27.719 19.871 15.221-1.762 27.718-13.596 27.718-26.312C436.905 582.782 425.425 572.633 407.859 574.347zM446.197 478.184c-81.6 3.708-147.581 47.4-147.581 101.98 0 54.469 65.981 95.343 147.581 91.562 81.6-3.712 147.736-54.854 147.736-109.274C593.933 508.018 527.796 474.398 446.197 478.184zM501.715 615.269c-24.915 32.244-74.336 48.024-122.438 22.02-22.807-12.378-22.025-36.741-22.025-36.741s-9.447-76.924 72.618-86.526C512.104 504.454 526.785 582.979 501.715 615.269zM446.742 563.765c-5.315 3.871-6.321 11.09-3.516 15.667 2.735 4.604 9.062 5.187 14.296 1.318 5.073-4.021 7.102-11.019 4.368-15.659C459.16 560.563 452.833 559.276 446.742 563.765zM499.997 51.393c-246.834 0-446.896 200.066-446.896 446.896 0 246.875 200.062 446.905 446.896 446.905 246.841 0 446.902-200.03 446.902-446.905C946.899 251.459 746.838 51.393 499.997 51.393zM666.875 598.561c-33.661 71.478-144.543 106.237-226.844 99.796-78.096-6.125-178.508-32.026-188.978-126.664 0 0-5.464-42.746 35.999-98.185 0 0 59.737-83.487 129.389-107.219 69.662-23.703 77.7 16.399 77.7 40.094-3.666 20.107-10.7 31.855 15.457 23.779 0 0 68.494-31.741 96.597-3.599 22.807 22.766 3.753 54.037 3.753 54.037s-9.453 10.398 9.992 14.168C639.311 498.601 700.53 526.947 666.875 598.561zM599.405 401.071c-7.419 0-13.429-6.001-13.429-13.395 0-7.494 6.01-13.547 13.429-13.547 0 0 83.869-15.493 73.871 74.615 0 0.584-0.081 0.98-0.155 1.402-1.091 6.4-6.556 11.323-13.118 11.323-7.579 0-13.589-6.012-13.589-13.396C646.414 448.075 659.692 387.749 599.405 401.071zM741.212 463.892h-0.075c-2.264 32.577-9.837 21.163-18.898 21.163-10.773 0-19.365-5.382-19.365-16.248 0-9.331 3.821-17.207 3.821-17.207 1.092-3.908 10.309-27.576-6.004-64.157-29.839-50.082-89.96-50.405-97.069-47.513-7.027 2.763-17.727 4.416-17.727 4.416-10.774 0-19.519-8.669-19.519-19.366 0-9.066 5.93-16.482 14.21-18.828 0 0 0.23-0.024 0.545-0.115 0.546-0.109 1.173-0.233 1.873-0.307 8.281-1.563 38.109-13.002 67.162-6.216C702.086 311.584 773.236 366.548 741.212 463.892z" p-id="2191" fill="#82a0b8"></path>
+                                </svg>
+                                <span>新浪微博<span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="qzone" href="#">
+                                <svg t="1488886914349" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3524" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"><defs><style type="text/css"></style></defs><path d="M740.3 65.93C706.99 49.4 671.51 36.6 634.39 28.1l0-0.01c-34.69-7.93-70.8-12.14-107.89-12.14-16.76 0-33.31 0.86-49.62 2.53-5.73 0.59-11.41 1.3-17.07 2.09-20.08 2.78-39.75 6.8-58.96 11.97C195.82 87.81 44.91 275.03 44.91 497.51c0 222.5 150.91 409.71 355.94 464.98 19.21 5.17 38.88 9.19 58.96 11.97 5.66 0.78 11.34 1.5 17.07 2.09 16.31 1.67 32.86 2.53 49.62 2.53 37.09 0 73.2-4.21 107.89-12.15 37.12-8.5 72.6-21.3 105.91-37.83 158.69-78.76 267.78-242.42 267.78-431.59C1008.08 308.35 898.99 144.69 740.3 65.93zM695.5 424.63c-75.25-32.49-306.94-25.24-374.89 6 90.13 6.01 180.28 12.01 270.41 18.01-2.05 4-4.1 8-6.15 12-73.74 48.01-147.5 96.03-221.24 144.04l0 6c134.47 18.1 281.18 1.86 405.61-12l0 6-12.29 0c-22.78 17.92-26.37 8.14-30.73 48.01 10.25 50.01 20.49 100.03 30.73 150.04-2.05 2-4.09 4-6.14 6l-24.59 0c-49.2-41.56-137.91-101.33-215.09-108.03-63.5 36.01-127.02 72.02-190.52 108.03-8.19-4-16.39-8-24.58-12 14.34-78.01 28.68-156.05 43.02-234.06-57.35-52.01-114.72-104.03-172.08-156.04 1.39-4.05 2.77-8.1 4.15-12.14 0.22-0.65 0.44-1.31 0.67-1.96 0.44-1.3 0.88-2.6 1.33-3.91 75.79-10 151.6-20 227.39-30.01 40.96-72.01 81.94-144.04 122.91-216.05l12.29 0c34.82 74.01 69.65 148.04 104.48 222.06 79.88 8 159.79 16 239.67 24 2.05 4 4.1 8.01 6.15 12.01-57.35 56-114.72 112.03-172.08 168.04l0 30.01c-75.78-6-151.6-12.01-227.38-18.01 4.09-2 8.19-4 12.29-6 69.64-50.01 139.3-100.03 208.95-150.04L695.5 424.63z" p-id="3525" fill="#82a0b8"></path></svg>
+                                <span>QQ空间</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-about">
+                <div class="footer-container">
+                    <div class="footer-aboutInfo">
+                        <a href="#" class="web-logo"></a>
+                        <a href="#" class="web-logo2"></a>
+                        <div class="about-link">
+                            <ul>
+                                <li><a href="#">公司简介</a> - </li>
+                                <li><a href="#">客户服务</a> - </li>
+                                <li><a href="#">相关法律</a> - </li>
+                                <li><a href="#">网易游戏</a> - </li>
+                                <li><a href="#">联系我们</a> - </li>
+                                <li><a href="#">商务合作</a> - </li>
+                                <li><a href="#">加入我们</a> - </li>
+                                <li><a href="#">用户协议</a></li>
+                            </ul>
+                            <span>网易公司版权所有 @1997-2017</span>
+                            <a href="#" class="parent">点击查看家长监护工程&nbsp;&nbsp;&nbsp;></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-alert">
+                <div class="footer-alert-info">
+                    <p>本游戏适合16岁以上的玩家进入。</p>
+                    <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱</p>
+                    <p>《网络游戏管理暂行办法》　文网游备字【2016】M-RPG4708号《网络文化经营许可证》浙网文[2016]0155-055号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game-develop-container" id="game-develop-container">
+        <div class="game-develop" id="game-develop">
+            <div class="global_server">
+                <div class="chinese_server_title">
+                    <p class="server_title_1">中国区-ios</p>
+                    <p class="server_title_2">网易-双平台</p>
+                    <p class="server_title_3">中国-安卓联运</p>
+                    <p class="server_title_4">联运-双平台</p>
+                </div>
+                <div class="chinese_server_list">
+                    <ul class="server_list_1">
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                    </ul>
+                    <ul class="server_list_2">
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                    </ul>
+                    <ul class="server_list_3">
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                        <li class="server_item">
+                            <i class="server_item_avatar"></i>
+                            <em class="server_item_state"></em>
+                            <span class="server_item_name">桂之馥</span>
+                        </li>
+                    </ul>
+                    <div class="server_list_right">
+                        <ul class="server_list_4">
+                            <li class="server_item">
+                                <i class="server_item_avatar"></i>
+                                <em class="server_item_state"></em>
+                                <span class="server_item_name">桂之馥</span>
+                            </li>
+                            <li class="server_item">
+                                <i class="server_item_avatar"></i>
+                                <em class="server_item_state"></em>
+                                <span class="server_item_name">桂之馥</span>
+                            </li>
+                            <li class="server_item">
+                                <i class="server_item_avatar"></i>
+                                <em class="server_item_state"></em>
+                                <span class="server_item_name">桂之馥</span>
+                            </li>
+                        </ul>
+                        <p class="server_list_5_title">国际区</p>
+                        <ul class="server_list_5">
+                            <li class="server_item">
+                                <i class="server_item_avatar"></i>
+                                <em class="server_item_state"></em>
+                                <span class="server_item_name">桂之馥</span>
+                            </li>
+                            <li class="server_item">
+                                <i class="server_item_avatar"></i>
+                                <em class="server_item_state"></em>
+                                <span class="server_item_name">桂之馥</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="develop_aside">
+                    <div class="server_title"></div>
+                    <div class="develop_announce">公平运营声明</div>
+                    <div class="develop_download"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="srvice_mask" id="srvice_mask">
+        <video crossorigin="anonymous" loop="" controls="" width="100%" height="350">
+            <source src="#">
+        </video>
+    </div>
+    <script>
+    function setup() {
+        document.getElementById("banner-bg-girl").style = "opacity:1;transform:translateY(-50px)";
+        document.getElementById("banner-bg-man").style = "opacity:1;transform:translateY(-50px)";
+        document.getElementById("banner-introduct").style = "opacity:1;transform:translateY(65px)";
+        document.getElementById("banner-yyshi-logo").style = "opacity:1;transform:translateX(50px)";
+    }
+    </script>
+    <script src="src/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 300,
+        loop: false,
+        autoplay: 3000
+    });
+
+    $("#return_top").click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400, "swing");
+    });
+
+    $("#mg-source .item").click(function() {
+        document.getElementById("srvice_mask").style.display = "block"
+    });
+
+    $("#srvice_mask").click(function() {
+        document.getElementById("srvice_mask").style.display = "none"
+    });
+    $("#game-develop-container").click(function() {
+        document.getElementById("game-develop-container").style.display = "none"
+    });
+    $("#mg-banner .runningfrog").click(function() {
+        document.getElementById("game-develop-container").style.display = "block";
+    });
+    </script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>

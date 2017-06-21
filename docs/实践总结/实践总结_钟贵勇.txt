@@ -1,0 +1,19 @@
+一.页面分析
+	1.我负责的模块:header和footer
+	2.动静态分析:header部分动画和过渡效果需要较多，footer部分仅一处需要动画效果。
+	
+二、动画与过渡效果分析
+	1.header部分
+		a.网站logo添加了hover动画，显示顶部半透明导航栏
+		b.header右上角导航菜单添加了hover动画(结合transition),增加了下拉列表和(transition)滚动新闻(animation)的动画效果。
+	2.footer部分
+		b.二维码使用螺旋上升并且加入淡入淡出的transition，钥匙使用rotateX(),门使用了translateY()的动画。
+
+三、跟阴阳师的对比
+	1.优点:
+		a.header部分半透明导航栏先出现透明背景，再出现导航菜单，这点我感觉比网易的淡入淡出的效果好。
+		b.header右上角菜单的hover效果的border的淡入淡出效果不说别的，border消失时间比背景快.1s，这点就是比网易好。
+		c.下拉菜单的时间严格控制，比网易的弹出效果更人性化，体验的感觉更好。
+	
+	2.缺点:没有
+		
